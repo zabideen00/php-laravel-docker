@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  php-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      args:
+        - USER_ID=${USER_ID}
+    image: php-app-image
+    user: ${USER_ID}
+    container_name: php-app
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/srv/app
+    networks:
+      - php-app-net
+
+networks:
+  php-app-net:
+    name: php-app-net

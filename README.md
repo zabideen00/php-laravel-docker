@@ -17,13 +17,13 @@
 
 # Contents
 
-- [Overview](##overview)
+- [Overview](#overview)
 
-- [Pre-requisites](##pre-requisites)
+- [Pre-requisites](#pre-requisites)
 
-- [Setup for development](###development-setup)
+- [Setup for development](#development-setup)
 
-- [Setup for production](###production-setup)
+- [Setup for production](#production-setup)
 
   
 

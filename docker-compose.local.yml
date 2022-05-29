@@ -1,14 +1,14 @@
 version: "3.8"
 services:
-  php-app:
+  php-app-local:
     build:
       context: .
       dockerfile: Dockerfile.local
       args:
         - USER_ID=${USER_ID}
-    image: php-app-image
+    image: php-app-image-local
     user: ${USER_ID}
-    container_name: php-app
+    container_name: php-app-local
     restart: unless-stopped
     tty: true
     ports:

@@ -8,6 +8,8 @@ services:
         - USER_ID=${USER_ID}
     image: php-app-image-local
     user: ${USER_ID}
+    env_file:
+      - .env
     container_name: php-app-local
     restart: unless-stopped
     tty: true

@@ -4,6 +4,8 @@ services:
     image: php-app-image
     container_name: php-app
     restart: unless-stopped
+    env_file:
+      - .env
     tty: true
     ports:
       - "4000:80"
